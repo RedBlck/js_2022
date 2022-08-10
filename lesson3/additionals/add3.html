@@ -3,6 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <style>
+    body, html {
+      width: 100%;
+      height: 100%;
+    }
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 100%;
+      position: relative;
+      column-gap: 1%;
+    }
+    .post-card {
+      width: 19%;
+    }
+  </style>
 </head>
 <body>
 <!--template 1.1-->
@@ -28,6 +44,7 @@
   /*За допомогою циклу вивести всю інформацію про пости використовуючи шаблон Template 1.1.
   * ЗА допомоги стилів побудувати структуру "сітки" по 5 об'єктів в лінію
   * */
+  document.write('<div class="wrap">')
   let array = [
     {
       userId: 1,
@@ -630,18 +647,12 @@
       body: 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut'
     }
   ];
-  document.write('<div class="wrap">)
   for (let i = 0; i < array.length; i++) {
     const arrayElement = array[i];
-    console.log(arrayElement);
-    document.write(`<div class="post-card">`);
-    for (let i = 0; i < arrayElement.length; i++) {
-      const element = arrayElement[i];
-      console.log(element);
-      document.write(`<h3>${element.body} - ${element.title}</h3>`);
-      document.write(`<p>${element.body}</p>`);
-    }
-    document.write(`</div>`);
+    document.write('<div class="post-card">');
+      document.write(`<h3>${arrayElement.id} - ${arrayElement.title}</h3>`);
+      document.write(`<p>${arrayElement.body}</p>`);
+    document.write('</div>');
   }
   document.write('</div>');
 </script>
