@@ -251,13 +251,13 @@
           name: 'Harry Potter',
           pages: 250,
           author: 'Rouling',
-          genre: 'fantasy'
+          genre: ['Higt fantasy', 'Adventure']
       },
       {
           name: 'The Lord of the Rings',
           pages: 800,
           author: 'Tolkien',
-          genre: 'Higt fantasy'
+          genre: ['Higt fantasy', 'Adventure']
       },
       {
           name: 'Ugly Love',
@@ -274,15 +274,71 @@
       {
           name: 'The Witcher',
           pages: 600,
-          author: 'Andrzej Sapkowski',
+          author: ['Andrzej Sapkowski', 'Leonardo'],
           genre: 'fantasy'
       }
   ];
-  // -знайти наібльшу книжку.
+  // - знайти наібльшу книжку.
+  // let manyPages = 0;
+  // for (let i = 0; i < books.length; i++) {
+  //     const book = books[i];
+  //     if (book.pages > manyPages) {
+  //         manyPages = book.pages;
+  //     }
+  // }
+  // console.log(manyPages);
+
   // - знайти книжку/ки з найбільшою кількістю жанрів
+  // let manyGenre = 0;
+  // for (let i = 0; i < books.length; i++) {
+  //     const book = books[i];
+  //     if (typeof book.genre === "object" && book.genre.length > manyGenre) {
+  //         manyGenre = book.genre.length;
+  //     } else if (manyGenre === 0) {
+  //         manyGenre = 1;
+  //     }
+  // }
+
+  // for (let i = 0; i < books.length; i++) {
+  //     const book = books[i];
+  //     if (book.genre.length === manyGenre) {
+  //         console.log(book.name);
+  //     } else if (manyGenre === 1) {
+  //         console.log(book.name);
+  //     }
+  // }
+
   // - знайти книжку/ки з найдовшою назвою
+  // let manyLiters = 0;
+  // for (let i = 0; i < books.length; i++) {
+  //     const book = books[i];
+  //     if (book.name.length > manyLiters) {
+  //         manyLiters = book.name.length;
+  //     }
+  // }
+  // for (let i = 0; i < books.length; i++) {
+  //     const book = books[i];
+  //     if (book.name.length === manyLiters) {
+  //         console.log(book.name);
+  //     }
+  // }
+
   // - знайти книжку/ки які писали 2 автори
+  // for (let i = 0; i < books.length; i++) {
+  //     const book = books[i];
+  //     if (typeof book.author === "object" && book.author.length === 2) {
+  //         console.log(book.name);
+  //     }
+  // }
+
   // - знайти книжку/ки які писав 1 автор
+  // let numAuthor = 0;
+  // for (let i = 0; i < books.length; i++) {
+  //     const book = books[i];
+  //     if (typeof book.author === "object" && book.author.length === 1 || typeof book.author === "string") {
+  //         console.log(book.name);
+  //     }
+  // }
 </script>
 
 </body>
