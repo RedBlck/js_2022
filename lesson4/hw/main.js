@@ -108,4 +108,5 @@
 //     }
 //     return suma;
 // }
+//
 // console.log(arrSum(arr));
