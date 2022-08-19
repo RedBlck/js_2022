@@ -165,9 +165,9 @@
 // -створити функцію, яка приймає масив з 2х об'єктів, та міняє їх місцями.
 // let arrObj = (array) => {
 //     [array[0], array[1]] = [array[1], array[0]];
-//     console.log(array);
+//     return array;
 // };
-// arrObj([
+// console.log(arrObj([
 //     {id: 98589, name: 'Roman', age: 20},
 //     {id: 68524, name: 'Jon', age: 34}
-// ])
+// ]));
