@@ -1,14 +1,29 @@
 // - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
+// let cutString = (str, n) => {
+//     let arr = [];
+//     for (let i = 0; i < str.length; i+=n) {
+//         arr.push(str.substr(i, n));
+//     }
+//     return arr
+// };
 // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
+
+
 // - Напишіть функцію delete_characters(str, length), яка повертає підрядок, що складається із зазначеної кількості символів.
-//     let str = 'Каждый охотник желает знать';
+// let str = 'Каждый охотник желает знать';
+// let delete_characters = (str, length) => str.substr(0, length);
 // document.writeln(delete_characters(str, 7)); // Каждый
-//
+
+
 // - Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами. При цьому всі символи рядка необхідно перевести у верхній регістр.
 //     let str = "HTML JavaScript PHP";
+// let insert_dash = (str) => str.toUpperCase().replaceAll(' ', '-');
 // document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
-//
+
+
 // - Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
+let fnUp = (str) => str[0].toUpperCase()+str.slice(1);
+console.log(fnUp('hello okten'));
 //
 // - Дано список імен.
 //     let n1 = 'Harry..Potter'
