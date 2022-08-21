@@ -22,9 +22,9 @@
 
 
 // - Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
-let fnUp = (str) => str[0].toUpperCase()+str.slice(1);
-console.log(fnUp('hello okten'));
-//
+// let fnUp = (str) => str[0].toUpperCase()+str.slice(1);
+// console.log(fnUp('hello okten'));
+
 // - Дано список імен.
 //     let n1 = 'Harry..Potter'
 // let n2 = 'Ron---Whisley'
@@ -33,9 +33,28 @@ console.log(fnUp('hello okten'));
 // let n1 = 'Harry Potter'
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
-//
+// let validName = (str) => {
+//     let valid = str
+//         .replaceAll('..', ' ')
+//         .replaceAll('---', ' ')
+//         .replaceAll('__', ' ');
+//     return valid;
+// };
+// console.log(validName(n1));
+// console.log(validName(n2));
+// console.log(validName(n3));
+
 //     - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
+let arrRandom = () => {
+    let array = [];
+    for (let i = 0; i < 10; i++) {
+        array.push(Math.round(Math.random() * 100));
+    }
+    return array;
+};
+console.log(arrRandom());
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. Відсортувати його за допомоги sort
+console.log(arrRandom().sort(a, b => a - b));
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати  його за допомоги filter, залишивши тільки парні числа (без 0!)
 //
 // - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
