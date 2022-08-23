@@ -25,23 +25,21 @@
 // }
 // }
 class User {
-    constructor(id, name, username, email, address, street, suite, city, zipcode) {
+    constructor(id, name, username, email, street, suite, city, zipcode) {
         this.id = id;
         this.name = name;
         this.username = username;
         this.email = email;
-        this.address = {
-            this.street = street;
-            address.suite = suite;
-            address.city = city;
-            address.zipcode = zipcode;
-        };
+        this.address.street = street;
+        this.address.suite = suite;
+        this.address.city = city;
+        this.address.zipcode= zipcode;
 
     }
 
 }
 
-console.log(new User(1, 'vova', 'pentsak', 'red@gmail.com', 'ostr1470', 'ostrivska', '147', 'pustomyty', 81106));
+console.log(new User(1, 'vova', 'pentsak', 'red@gmail.com', 'ostrivska', '147', 'pustomyty', 81106));
 
 
 // -  Створити функцію конструктор / клас  який описує об'єкт тегу
