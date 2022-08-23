@@ -24,8 +24,26 @@
 //         bs: 'harness real-time e-markets'
 // }
 // }
-//
-//
+class User {
+    constructor(id, name, username, email, address, street, suite, city, zipcode) {
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.email = email;
+        this.address = {
+            this.street = street;
+            address.suite = suite;
+            address.city = city;
+            address.zipcode = zipcode;
+        };
+
+    }
+
+}
+
+console.log(new User(1, 'vova', 'pentsak', 'red@gmail.com', 'ostr1470', 'ostrivska', '147', 'pustomyty', 81106));
+
+
 // -  Створити функцію конструктор / клас  який описує об'єкт тегу
 // Поля :
 //     -назва тегу ()
