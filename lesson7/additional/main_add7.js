@@ -24,22 +24,36 @@
 //         bs: 'harness real-time e-markets'
 // }
 // }
-class User {
-    constructor(id, name, username, email, street, suite, city, zipcode) {
-        this.id = id;
-        this.name = name;
-        this.username = username;
-        this.email = email;
-        this.address.street = street;
-        this.address.suite = suite;
-        this.address.city = city;
-        this.address.zipcode= zipcode;
-
-    }
-
-}
-
-console.log(new User(1, 'vova', 'pentsak', 'red@gmail.com', 'ostrivska', '147', 'pustomyty', 81106));
+// class User {
+//     constructor(id, name, username, email,addressStreet, addressSuite, addressCity, addressZipcode,
+//                 addressGeoLat, addressGeoLng,phone, website, companyName, companyCatchPhrase, companyBs) {
+//         this.id = id;
+//         this.name = name;
+//         this.username = username;
+//         this.email = email;
+//         this.address = {
+//             street: addressStreet,
+//             suite: addressSuite,
+//             city: addressCity,
+//             zipcode: addressZipcode,
+//             geo:{
+//                 lat: addressGeoLat,
+//                 lng: addressGeoLng,
+//
+//             }
+//         }
+//         this.phone = phone;
+//         this.website = website;
+//         this.company = {
+//             name: companyName,
+//             catchPhrase: companyCatchPhrase,
+//             bs: companyBs
+//         }
+//     }
+//
+// }
+//
+// console.log(new User(1, 'vova', 'pentsak', 'red@gmail.com', 'ostrivska', 147,'Schyrets',81160, 325.12,125.4,063333333,'wersite','redblack','hzschoce',228));
 
 
 // -  Створити функцію конструктор / клас  який описує об'єкт тегу
