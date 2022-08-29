@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: skyblue;
+}
+.conteiner {
+    background: darkslategrey;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+.box {
+    display: flex;
+    width: 98%;
+    flex-wrap: wrap;
+    border: solid dodgerblue 2px;
+    border-radius: 10px;
+    padding: 5px;
+    column-gap: 16px;
+    row-gap: 10px;
+}
+.title {
+    width: 100%;
+    border: solid  2px;
+    border-radius: 7px;
+    padding: 3px;
+}
+.monthDuration {
+    width: 29%;
+    border: solid  2px;
+    border-radius: 7px;
+    padding: 3px;
+}
+.hourDuration {
+    width: 69%;
+    border: solid  2px;
+    border-radius: 7px;
+    padding: 3px;
+}
+.div_modules {
+    width: 100%;
+    border: solid  2px;
+    border-radius: 7px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+.module {
+    border: solid white 1px;
+    border-radius: 7px;
+    padding: 3px;
+
+}

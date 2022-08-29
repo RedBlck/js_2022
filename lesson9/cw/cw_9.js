@@ -168,15 +168,35 @@ let coursesArray = [
         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
     }
 ];
+let conteiner = document.createElement('div');
+conteiner.classList.add('conteiner');
+document.body.appendChild(conteiner);
 for (const course of coursesArray) {
-    let conteiner = document.createElement('div');
-    document.body.appendChild(conteiner);
+    let box = document.createElement('div');
+    box.classList.add('box');
+    conteiner.appendChild(box);
     for (const courseKey in course) {
         let divElement = document.createElement('div');
         if (courseKey !== 'modules') {
             divElement.innerText = `${courseKey}: ${course[courseKey]}`;
+            if (courseKey === 'title') {
+                divElement.classList.add('title');
+            }else if (courseKey === 'monthDuration') {
+                divElement.classList.add('monthDuration');
+            }else if (courseKey === 'hourDuration') {
+                divElement.classList.add('hourDuration');
+            }
+        }else if (courseKey === 'modules') {
+            let divModules = document.createElement('div');
+            divModules.classList.add('div_modules');
+            box.append(divModules);
+            for (const module of course.modules) {
+                let divModule = document.createElement('div');
+                divModule.classList.add('module');
+                divModule.innerText = module;
+                divModules.append(divModule);
+            }
         }
-        conteiner.append(divElement);
+        box.append(divElement);
     }
-
 }
