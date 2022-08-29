@@ -33,7 +33,6 @@
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 20px;
-    align-items: center;
     justify-content: center;
 }
 .postBox {
@@ -44,7 +43,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding: 10px;
     color: blueviolet;
 
