@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    background: aliceblue;
+}
+#conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    column-gap: 15px;
+    row-gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+.box {
+    width: 47%;
+    border: solid 2px blueviolet;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: blueviolet;
+}
+.btn {
+    width: 75%;
+    border: none;
+    background: blueviolet;
+    border-radius: 20px;
+    height: 30px;
+    color: aliceblue;
+}
