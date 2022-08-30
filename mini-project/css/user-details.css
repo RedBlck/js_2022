@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+}
+body {
     background: aliceblue;
 }
 .conteiner {
@@ -9,18 +11,36 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    column-gap: 20px;
     row-gap: 20px;
     color: blueviolet;
     padding-top: 20px;
 }
 .btn {
     width: 90%;
-    border: none;
     background: blueviolet;
     border-radius: 20px;
-    height: 30px;
+    height: 40px;
     color: aliceblue;
+    cursor: pointer;
+    border: solid 2px blueviolet;
+    transition: 0.5s;
+}
+.btn:hover {
+    border: 2px solid white;
+    transition: 0.5s;
+}
+.conteinerBoxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    row-gap: 30px;
+    color: blueviolet;
+    font-size: 20px;
+    border: solid 2px blueviolet;
+    border-radius: 10px;
+    padding: 20px 0;
 }
 .box {
     width: 21%;
@@ -31,8 +51,8 @@
 .postsConteiner {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 30px;
+    row-gap: 30px;
     justify-content: center;
 }
 .postBox {
@@ -41,20 +61,33 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
     align-items: center;
     padding: 10px;
     color: blueviolet;
-
+    transition: 0.5s;
+    font-size: 18px;
+}
+.postBox:hover {
+    background: dodgerblue;
+    transition: 0.5s;
+    color: white;
 }
 .postBtn {
-    width: 50px;
+    width: 100px;
     height: 30px;
-    border: none;
+    border: solid 2px blueviolet;
     background: blueviolet;
     border-radius: 20px;
     color: aliceblue;
     margin-top: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.postBtn:hover {
+    border: 2px solid white;
+    transition: 0.5s;
 }
 .postsConteinerNone {
     display: none;

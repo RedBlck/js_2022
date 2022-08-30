@@ -4,6 +4,8 @@ conteiner.classList.add('conteiner');
 let btn = document.createElement('button');
 btn.classList.add('btn');
 btn.innerText = 'post of current user';
+let conteinerBoxs = document.createElement('div');
+conteinerBoxs.classList.add('conteinerBoxs');
 for (const userKey in user) {
     let box = document.createElement('div');
     box.classList.add('box');
@@ -30,9 +32,9 @@ for (const userKey in user) {
     } else {
         box.innerHTML = `<strong>${userKey}:</strong> ${user[`${userKey}`]}`;
     }
-    conteiner.append(box);
+    conteinerBoxs.append(box);
 }
-conteiner.append(btn);
+conteiner.append(conteinerBoxs,btn);
 document.body.append(conteiner);
 
 let postsConteiner = document.createElement('div');

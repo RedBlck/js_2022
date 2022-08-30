@@ -1,19 +1,22 @@
 * {
     padding: 0;
     margin: 0;
+}
+body {
     background: aliceblue;
 }
 #conteiner {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
-    column-gap: 15px;
-    row-gap: 15px;
+    column-gap: 30px;
+    row-gap: 30px;
     justify-content: center;
     padding: 20px;
 }
 .box {
-    width: 47%;
+    width: 44%;
+    min-height: 100px;
     border: solid 2px blueviolet;
     border-radius: 10px;
     display: flex;
@@ -21,12 +24,31 @@
     flex-wrap: wrap;
     padding: 10px;
     color: blueviolet;
+    transition: 0.5s;
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.box:hover {
+    background: dodgerblue;
+    transition: 0.5s;
+    color: white;
 }
 .btn {
-    width: 75%;
-    border: none;
+    width: 200px;
+    border: 2px solid blueviolet;
     background: blueviolet;
     border-radius: 20px;
     height: 30px;
-    color: aliceblue;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover {
+    border: 2px solid white;
+    transition: 0.5s;
 }
